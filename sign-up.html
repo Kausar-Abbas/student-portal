@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo.svg">
+    <link rel="stylesheet" href="./assets/css/sign-up.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./assets/js/script.js" ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>SignUp</title>
+</head>
+<body>
+    <section class="navbar">
+        <nav data-aos="fade-in" class="nav">
+           <div class="sidebar">
+            <ul>
+                <li class="close-button" onclick=hideForm()><img src="./assets/icons/close_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+                <li ><a href=""><img src="./assets/images/logo.svg" alt=""></a></li>
+                <li><a href="index.html#information-wrapper1">About Us</a></li>
+                <li><a href="index.html#courses-wrapper">Courses</a></li>
+                <li><a href="index.html#professor-spotlight">Professors</a></li>
+                <li class="login-side"><a href="">Login</a></li>
+                <li class="signup-side"><a href="">SignUp</a></li>
+            </ul>
+           </div>
+            
+           
+            <ul  class="not">
+                <li ><a href=""><img  class="logo" src="./assets/images/logo.svg" alt=""></a></li>
+                <li class="hidemobile"><a href="index.html#information-wrapper">About Us</a></li>
+                <li class="hidemobile"><a href="index.html#courses-wrapper">Courses</a></li>
+                <li class="hidemobile"><a href="index.html#professor-spotlight">Professors</a></li>
+                <li class="hidemobile login"><a href="">Login</a></li>
+                <li class="hidemobile"><a href="">SignUp</a></li>
+                <li class="menu-button" onclick=showForm()><img src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz24.svg" alt=""></li>
+            </ul>
+        </nav>
+    </section><!-- /.navbar -->
+    <secction class="hero-section">
+        <div data-aos="fade-up" class="login-details">
+            <div class="form-details">
+                <h1>SignUp</h1>
+                <form action="">
+                    <select class="option-selection" name="" id="option">
+                        <option value="Role" disabled selected>Select Your Role</option>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                    </select>
+                    <div class="name-input">
+                        <input type="text" id="name" placeholder="Full Name">
+                    </div>
+                    <div tabindex="1" class="email-wrapper">
+                    <input tabindex="1" type="email" placeholder="Email" id="email" required>
+                    </div>
+                    <label for="">Password <span>*</span></label>
+                    
+                    <div tabindex="1" class="input-password">
+                        <input tabindex="1" type="password" placeholder="Password" id="password" required>
+                        <img onclick="passValid()" id="eye-icon" src="./icons/eyebrow.png" alt="">
+                    </div>
+                </form>
+            </div><!-- /.form-details -->
+            <div class="terms-conditions" style="display: flex;">
+                <input type="checkbox">
+                <p>I agree to <a href="">Terms</a> and <a href="">Conditions</a></p>
+            </div>
+            <div class="form-buttons">
+                <a href="" type="submit" id="submit">SignUp</a>
+                <a href="./sign_in.html">Login</a>
+            </div><!-- /.form-buttons -->
+        </div><!-- /.login-details -->
+    </secction><!-- /.hero-section -->
+
+
+
+
+    <section class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-details">
+                <p data-aos="fade-up" >&copy; 2024 NoCode University. All rights reserved.</p>
+                <img data-aos="fade-up" src="./assets/images/Screenshot_2024-02-13_100248-removebg-preview.png" alt="">
+            </div><!-- /.footer-details -->
+            <div class="icons2"></div><!-- /.icons2 -->
+        </div><!-- /.footer-wrapper -->
+    </section><!-- /.footer -->
+
+
+    <script>
+        AOS.init({
+            duration: 2000,
+            delay: 500,
+        });
+    </script>
+</body>
+</html> 
